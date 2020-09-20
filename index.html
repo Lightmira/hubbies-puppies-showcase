@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hubbies Puppies</title>
+  <link rel="icon" href="img-lord/core-img/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+        integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin=""
+  />
+</head>
+
+<body>
+  <div class="preloader d-flex align-items-center justify-content-center">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- ##### Header Area Start ##### -->
+  <header class="header-area">
+    <div class="famie-main-menu">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <nav class="classy-navbar justify-content-between" id="famieNav">
+            <a href="index.html" class="nav-brand">
+              <img src="img-lord/core-img/logo.png" alt="">
+            </a>
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div class="classy-menu">
+              <div class="classycloseIcon">
+                <div class="cross-wrap">
+                  <span class="top"></span>
+                  <span class="bottom"></span>
+                </div>
+              </div>
+              <div class="classynav">
+                <ul>
+                  <li class="active">
+                    <a href="index.html">Accueil</a>
+                  </li>
+                  <li>
+                    <a href="#about-us">Qui sommes-nous ?</a>
+                  </li>
+                  <li>
+                    <a href="#quoi">Quoi ?</a>
+                  </li>
+                  <li>
+                    <a href="#qui">Pour qui ?</a>
+                  </li>
+                  <li>
+                    <a href="#concept">Concept</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#reperage">Repérage</a>
+                  </li>
+                  <li class="hp-menu-spacer">
+                    <a href="#">Connexion</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="search-form">
+            <form action="#" method="get">
+              <input type="search" name="search" id="search" placeholder="Type keywords &amp; press enter...">
+              <button type="submit" class="d-none"></button>
+            </form>
+            <div class="closeIcon">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ##### Header Area End ##### -->
+
+  <!-- ##### Hero Area Start ##### -->
+  <div class="hero-area">
+    <div class="welcome-slides owl-carousel">
+      <div class="single-welcome-slides bg-img bg-overlay jarallax" style="background-image: url(img-lord/bg-img/3.jpg);">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12 col-lg-10">
+              <div class="welcome-content">
+                <h2 data-animation="fadeInDown" data-delay="200ms">
+                  <span class="hp-caps hp-green">Hubbies</span>&nbsp;<span class="hp-caps">Puppies</span>
+                </h2>
+                <p data-animation="fadeInDown" data-delay="400ms">
+                  Vous cherchez, nous trouvons !
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-welcome-slides bg-img bg-overlay jarallax" style="background-image: url(img-lord/bg-img/1.jpg);">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12 col-lg-10">
+              <div class="welcome-content">
+                <h2 data-animation="fadeInUp" data-delay="200ms">
+                  Je recherche un/une boule de poils à adopter
+                </h2>
+                <a href="#" class="btn famie-btn mt-4" data-animation="bounceInUp" data-delay="600ms">C'est ici !</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-welcome-slides bg-img bg-overlay jarallax" style="background-image: url(img-lord/bg-img/2.jpg);">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12 col-lg-10">
+              <div class="welcome-content">
+                <h2 data-animation="fadeInDown" data-delay="200ms">
+                  Je cherche une solution pour mon site d'Association
+                </h2>
+                <a href="#" class="btn famie-btn mt-4" data-animation="bounceInDown" data-delay="600ms">Encore ici !</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ##### Hero Area End ##### -->
+
+  <!-- ##### Famie Benefits Area Start ##### -->
+  <section class="famie-benefits-area section-padding-100-0 pb-5 mb-100" id="about-us">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-4 col-lg">
+          <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="100ms">
+            <i class="fa fa-group fa-4x mb-4 hp-green"></i>
+            <h5>Communautaire</h5>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-lg">
+          <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="300ms">
+            <i class="fa fa-paw fa-4x mb-4 hp-green"></i>
+            <h5>Adoptions</h5>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-lg">
+          <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="500ms">
+            <i class="fa fa-glass fa-4x mb-4 hp-green"></i>
+            <h5>Élégance</h5>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-lg">
+          <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="700ms">
+            <i class="fa fa-star fa-4x mb-4 hp-green"></i>
+            <h5>Qualité</h5>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-lg">
+          <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="900ms">
+            <i class="fa fa-eur fa-4x mb-4 hp-green"></i>
+            <h5>Économique</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ##### Famie Benefits Area End ##### -->
+
+  <!-- ##### About Us Area Start ##### -->
+  <section class="about-us-area mb-100" id="concerne">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-8">
+          <div class="about-us-content mb-100">
+            <div class="section-heading">
+              <p>Qui sommes-nous ?</p>
+              <h2>
+                Une équipe&nbsp;de <span>passionnés</span>&nbsp;aimants les animaux
+              </h2>
+              <img src="img/core-img/decor.png" alt="">
+            </div>
+            <p>
+              Aider les animaux est un défi au quotidien et nous le savons. Pour une cause aussi noble, créer un site
+              ne devrait pas être si difficile. Hubbies Puppies est là pour répondre au besoin d'être accessible à tous
+              sans difficulté !<br/>
+              Oui, pour <strong class="hp-green">1€ symbolique</strong>, vous pouvez avoir votre site élégant et simple à la fois :)
+            </p>
+            <a href="#contact" class="btn famie-btn mt-30">En savoir plus</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="famie-video-play mb-100">
+            <img src="img-lord/bg-img/4-2.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ##### About Us Area End ##### -->
+
+  <!-- ##### Services Area Start ##### -->
+  <section class="services-area d-flex flex-wrap" id="quoi">
+    <div class="services-thumbnail bg-img jarallax" style="background-image: url('img-lord/bg-img/5.jpg');"></div>
+
+    <div class="services-content section-padding-100-50 px-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading">
+              <p>Pourquoi nous faire confiance ?</p>
+              <h2><span>Simple & rapide</span> suivez le guide</h2>
+              <img src="img/core-img/decor.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 mb-50">
+            <p>
+              Donnez-nous les détails de votre association et la cause que vous défendez et on
+              s'occupe du reste !<br/>
+              En quelques léchouilles, votre page est disponible pour tous !
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+              <div class="service-title mb-3 d-flex align-items-center">
+                <i class="fa fa-fighter-jet fa-2x hp-green"></i>&nbsp;&nbsp;-&nbsp;&nbsp;
+                <h5>Rapide à mettre en place</h5>
+              </div>
+              <p>
+                Pas besoin de passer des jours dessus quelques minutes suffiront !
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+              <div class="service-title mb-3 d-flex align-items-center">
+                <i class="fa fa-smile-o fa-2x hp-green"></i>&nbsp;&nbsp;-&nbsp;&nbsp;
+                <h5>Simple d'utilisation</h5>
+              </div>
+              <p>
+                Pas de chichi tout est facile à prendre en main !
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
+              <div class="service-title mb-3 d-flex align-items-center">
+                <i class="fa fa-eyedropper fa-2x hp-green"></i>&nbsp;&nbsp;-&nbsp;&nbsp;
+                <h5>Customisation</h5>
+              </div>
+              <p>
+                C'est bien beau d'avoir un site mais avec son thème c'est mieux :)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="700ms">
+              <div class="service-title mb-3 d-flex align-items-center">
+                <i class="fa fa-hourglass fa-2x hp-green"></i>&nbsp;&nbsp;-&nbsp;&nbsp;
+                <h5>Économie de temps</h5>
+              </div>
+              <p>
+                Nous permettons de réaliser des démarches en ligne et gagnez en organisation !
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ##### Services Area End ##### -->
+
+  <!-- ##### Our Products Area Start ##### -->
+  <section class="our-products-area section-padding-100" id="qui">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <p>Qui cela concerne t-il ?</p>
+            <h2>
+              Absolument tout le <span>monde</span> !
+            </h2>
+            <img src="img/core-img/decor2.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-12 col-sm-6 col-lg-6">
+          <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+            <div class="farming-practice-thumbnail">
+              <img src="img-lord/bg-img/7.jpg" alt="famille">
+            </div>
+            <div class="farming-practice-content text-center">
+              <div class="farming-icon">
+                <i class="fa fa-heart-o fa-2x hp-green"></i>
+              </div>
+              <span>Je suis</span>
+              <h4>Une famille</h4>
+              <p>
+                Trouvez la strcuture non loin de chez-vous et offrez une nouvelle vie à nos amis qui n'attendent
+                que votre amour !
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-6">
+          <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="200ms">
+            <div class="farming-practice-thumbnail">
+              <img src="img-lord/bg-img/8.jpg" alt="association">
+            </div>
+            <div class="farming-practice-content text-center">
+              <div class="farming-icon">
+                <i class="fa fa-heartbeat fa-2x hp-green"></i>
+              </div>
+              <span>Je suis</span>
+              <h4>Une association</h4>
+              <p>
+                Mettez en avant votre structure pour nos amis qui n'attendent qu'une chose : être adoptés par
+                une famille aimante.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- ##### Our Products Area End ##### -->
+
+  <!-- ##### Newsletter Area Start ##### -->
+  <section class="newsletter-area section-padding-100 bg-img bg-overlay jarallax"
+           style="background-image: url('img/bg-img/2.jpg');"
+           id="concept"
+  >
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          <div class="newsletter-content">
+            <div class="section-heading white text-center">
+              <p>Résumons tout ça</p>
+              <h2>
+                <span>Mettre en relation</span> et aider au mieux
+              </h2>
+              <img src="img/core-img/decor2.png" alt="">
+            </div>
+            <p class="text-white mb-50 text-center">
+              Notre rôle est de mettre en relation les associations qui passent par notre plateforme avec vous,
+              familles, afin de faciliter l'adoption de nos petits amis en manque de foyer.<br/>
+              Nous espérons du fond du coeur que vous aimerez Hubbies-Puppies autant que nous aimons les animaux.
+              <br/><br/>
+              Venez ! Approchez ! N'ayez crainte, nous ne mordons pas !
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ##### Newsletter Area End ##### -->
+
+  <!-- ##### Contact Area Start ##### -->
+  <section class="contact-area bg-gray section-padding-100-0" id="contact">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-12 col-lg-7">
+          <div class="contact-content section-padding-0-100">
+            <div class="section-heading">
+              <p>C'est l'heure de manger !</p>
+              <h2>
+                <span>Discutons</span> autour d'un os
+              </h2>
+              <img src="img/core-img/decor.png" alt="">
+            </div>
+            <div class="contact-form-area">
+              <form action="index.html" method="post">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <input type="text" class="form-control" name="name" placeholder="Nom">
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="email" class="form-control" name="email" placeholder="Email">
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Sujet">
+                  </div>
+                  <div class="col-12">
+                    <textarea name="message" class="form-control" cols="30" rows="10" placeholder="Demandez-nous ce que vous voulez !"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn famie-btn">
+                      C'est parti !
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="consaltant-thumbnail text-center">
+            <img src="img-lord/bg-img/01.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ##### Contact Area End ##### -->
+
+  <!-- ##### Testimonial Area Start ##### -->
+  <section class="testimonial-area bg-img bg-overlay section-padding-100 jarallax" style="background-image: url('img/bg-img/15.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="testimonial-slides owl-carousel">
+
+            <div class="single-slide">
+              <div class="testi-text d-flex">
+                <div class="quote-icon">
+                  <img src="img/core-img/quote.png" alt="">
+                </div>
+                <h5>
+                  "Alors que j'aide pour une association d'Île-de-France, j'ai pu recommander à la fondatrice de passer
+                  par la plateforme. C'est moins prise de tête que de se renseigner sur comment faire un site soi-même :D"
+                </h5>
+              </div>
+              <div class="testimonial-thumbnail-name d-flex align-items-center">
+                <div class="testimonial-thumbnail">
+                  <img src="img-lord/bg-img/02.png" alt="">
+                </div>
+                <div class="testimonial-name">
+                  <h5>Ophélie</h5>
+                  <h6>Utilisatrice</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-slide">
+              <div class="testi-text d-flex">
+                <div class="quote-icon">
+                  <img src="img/core-img/quote.png" alt="">
+                </div>
+                <h5>
+                  "Si je devais résumer en quelques mots je dirai que quand on est pas du milieu c'est vraiment
+                  pratique d'avoir des outils qui font le travail à notre place. On peut se focaliser sur l'essentiel."
+                </h5>
+              </div>
+              <div class="testimonial-thumbnail-name d-flex align-items-center">
+                <div class="testimonial-thumbnail">
+                  <img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-1/p200x200/59800971_1083109801893855_5998612455310229504_o.jpg?_nc_cat=100&_nc_sid=7206a8&_nc_ohc=DK9e60B12iYAX8Hu2jM&_nc_ht=scontent-cdg2-1.xx&tp=6&oh=db8576df1ab23cd9c686c149d2becb6a&oe=5F8E99F3" alt="">
+                </div>
+                <div class="testimonial-name">
+                  <h5>Fred</h5>
+                  <h6>Utilisateur</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-slide">
+              <div class="testi-text d-flex">
+                <div class="quote-icon">
+                  <img src="img/core-img/quote.png" alt="">
+                </div>
+                <h5>
+                  "J'ai créé Hubbies-Puppies après avoir constaté que bien des associations venaient à dépenser des
+                  sommes astronomiques pour leur site. Quand on sait qu'elles vivent de dons, on se demande où est
+                  la prise de conscience."
+                </h5>
+              </div>
+              <div class="testimonial-thumbnail-name d-flex align-items-center">
+                <div class="testimonial-thumbnail">
+                  <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-1/p200x200/93245399_2956654014414685_3418059601222828032_o.jpg?_nc_cat=105&_nc_sid=7206a8&_nc_ohc=EXRA8GdMrWUAX85sH8h&_nc_ht=scontent-cdt1-1.xx&tp=6&oh=d9068e5ab99b500b589ef7c4a023a5c3&oe=5F8BD3F5" alt="">
+                </div>
+                <div class="testimonial-name">
+                  <h5>Etienne</h5>
+                  <h6>Fondateur</h6>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ##### Testimonial Area End ##### -->
+
+  <!-- ##### Contact Area Start ##### -->
+  <section class="contact-area section-padding-100-0 mb-100" id="reperage">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <p>Un peu de repérage</p>
+            <h2>
+              Qui puis-je trouver <span>autour de moi</span> ?
+            </h2>
+            <img src="img/core-img/decor2.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-between">
+        <div class="col-lg-12">
+          <div class="contact-maps mb-100">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ##### Contact Area End ##### -->
+
+  <!-- ##### Footer Area Start ##### -->
+  <footer class="footer-area">
+    <div class="main-footer bg-img bg-overlay section-padding-80-0" style="background-image: url(img/bg-img/3.jpg);">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="footer-widget mb-80">
+              <p>
+                Vous souhaitez nous contacter pour avoir des rensignements ?<br/>
+                N'hésitez pas et suivez la piste &nbsp;<i class="fa fa-arrow-down"></i>
+              </p>
+              <div class="contact-info">
+                <p>
+                  <i class="fa fa-envelope" aria-hidden="true"></i><span>contact@hubbies-puppies.fr</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="footer-widget mb-80">
+              <h5 class="widget-title">NOS PETITS NOUVEAUX</h5>
+
+              <div class="single-recent-blog d-flex align-items-center">
+                <div class="post-thumbnail">
+                  <img src="img/bg-img/4.jpg" alt="">
+                </div>
+                <div class="post-content">
+                  <a href="#" class="post-title">WA’s largest farming business on the market</a>
+                  <div class="post-date">18 Aug 2018</div>
+                </div>
+              </div>
+
+              <div class="single-recent-blog d-flex align-items-center">
+                <div class="post-thumbnail">
+                  <img src="img/bg-img/5.jpg" alt="">
+                </div>
+                <div class="post-content">
+                  <a href="#" class="post-title">Beef retail prices hit a record</a>
+                  <div class="post-date">18 Aug 2018</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="footer-widget mb-80">
+              <h5 class="widget-title">Restons connectés    </h5>
+              <div class="footer-social-info">
+                <a href="https://www.facebook.com/HubbiesPuppies/">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <span>Facebook</span>
+                </a>
+                <a href="https://twitter.com/HubbiesP">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <span>Twitter</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Copywrite Area  -->
+    <div class="copywrite-area">
+      <div class="container">
+        <div class="copywrite-text">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <p>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés |
+                Template par <a href="https://colorlib.com" target="_blank">Colorlib</a>. Édité par
+                <a href="https://www.facebook.com/etienne.crespi">Etienne Crespi</a>
+              </p>
+            </div>
+            <div class="col-md-5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ##### Footer Area End ##### -->
+
+  <!-- ##### All Javascript Files ##### -->
+  <!-- jquery 2.2.4  -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Owl Carousel js -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Classynav -->
+  <script src="js/classynav.js"></script>
+  <!-- Wow js -->
+  <script src="js/wow.min.js"></script>
+  <!-- Sticky js -->
+  <script src="js/jquery.sticky.js"></script>
+  <!-- Magnific Popup js -->
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <!-- Scrollup js -->
+  <script src="js/jquery.scrollup.min.js"></script>
+  <!-- Jarallax js -->
+  <script src="js/jarallax.min.js"></script>
+  <!-- Jarallax Video js -->
+  <script src="js/jarallax-video.min.js"></script>
+  <!-- Active js -->
+  <script src="js/active.js"></script>
+  <!-- Open Street Map -->
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+          integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+          crossorigin=""></script>
+  <script type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      var lat = 48.852969;
+      var lon = 2.349903;
+      var macarte = null;
+
+      function initMap() {
+        macarte = L.map('map').setView([lat, lon], 11);
+
+        // markers
+        let marker = L.marker([lat, lon]).addTo(macarte);
+        marker.bindPopup('<a href="#">Bonjour</a>');
+
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+          attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+          minZoom: 1,
+          maxZoom: 20
+        }).addTo(macarte);
+      }
+
+      window.onload = function(){
+        initMap();
+      };
+
+    });
+  </script>
+</body>
+
+</html>
